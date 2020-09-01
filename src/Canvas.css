@@ -1,0 +1,18 @@
+.Canvas {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.Box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 15px;
+}
