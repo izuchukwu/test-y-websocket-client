@@ -1,9 +1,13 @@
 .Canvas {
     margin: 0;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
+
+    /* Prevent scroll on iPhone */
+    overflow: hidden;
+    position: fixed;
 }
 
 .Box {
@@ -15,4 +19,32 @@
     border-radius: 8px;
     background-color: white;
     margin: 15px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.Bar {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+}
+
+.Room {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.Peer {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.Cursor {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
 }
